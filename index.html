@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trang web giới thiệu bản thân của Hoàng Long" />
+  <title>Hoàng Long | Trang cá nhân</title>
+  <style>
+    :root { --bg: #0b1020; --panel: #141c31; --border:#2b3651; --text:#eef3ff; --muted:#b3bfd7; --accent:#8b9dff; --mint:#67e6cf; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:radial-gradient(circle at 80% 0%,#1d2d5a 0,transparent 35%),var(--bg); color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.6; }
+    a {color:inherit;text-decoration:none;}
+    .wrap {max-width:1000px;margin:0 auto;padding:0 24px;}
+    header {border-bottom:1px solid var(--border);background:rgba(11,16,32,.8);}
+    nav {min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+    .brand {font-weight:800;font-size:1.1rem;letter-spacing:.5px;}
+    .brand span,.accent {color:var(--mint);}
+    .links {display:flex;gap:20px;color:var(--muted);font-size:.95rem;}
+    .links a:hover {color:var(--mint);}
+    .hero {padding:110px 0 80px;}
+    .eyebrow {color:var(--mint);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.85rem;}
+    h1 {font-size:clamp(2.8rem,7vw,5rem);line-height:1.1;letter-spacing:-2px;margin:16px 0;}
+    .lead {color:var(--muted);font-size:1.2rem;max-width:620px;}
+    .buttons {display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;}
+    .btn {border:1px solid var(--accent);border-radius:12px;padding:12px 20px;font-weight:700;transition:transform .2s;}
+    .btn:hover{transform:translateY(-3px);}
+    .btn.primary {background:var(--accent);color:#0b1020;}
+    section {padding:44px 0;}
+    h2 {font-size:1.9rem;margin:0 0 20px;}
+    .intro {color:var(--muted);max-width:750px;}
+    .grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px;}
+    .card {padding:24px;border:1px solid var(--border);background:var(--panel);border-radius:18px;}
+    .card h3 {margin:0 0 10px;color:var(--mint);}
+    .card p {color:var(--muted);margin:0;}
+    .project {border:1px solid var(--border);background:linear-gradient(120deg,#1c284b,#141c31);padding:30px;border-radius:18px;}
+    .project small {color:var(--mint);letter-spacing:1px;text-transform:uppercase;}
+    .project h3 {font-size:1.5rem;margin:8px 0;}
+    .project p {color:var(--muted);margin-bottom:0;}
+    footer {margin-top:55px;border-top:1px solid var(--border);padding:24px 0;color:var(--muted);font-size:.9rem;}
+    @media (max-width:640px){ .links{gap:10px;font-size:.85rem;} .hero{padding:76px 0 50px;} .grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#top">HOÀNG <span>LONG.</span></a>
+      <div class="links"><a href="#about">Giới thiệu</a><a href="#skills">Kỹ năng</a><a href="#projects">Dự án</a></div>
+    </nav>
+  </header>
+  <main class="wrap" id="top">
+    <div class="hero">
+      <div class="eyebrow">Xin chào, mình là</div>
+      <h1>Hoàng Long<span class="accent">.</span></h1>
+      <p class="lead">Sinh viên ngành Ứng dụng phần mềm tại FPT Polytechnic. Mình yêu thích công nghệ, lập trình và luôn muốn học hỏi những điều mới.</p>
+      <div class="buttons"><a href="#about" class="btn primary">Tìm hiểu về mình</a><a href="#projects" class="btn">Xem dự án</a></div>
+    </div>
+    <section id="about">
+      <h2>👋 Giới thiệu bản thân</h2>
+      <p class="intro">Mình đang học tập và khám phá lĩnh vực phát triển phần mềm. Mục tiêu của mình là xây dựng những sản phẩm hữu ích, rèn luyện khả năng giải quyết vấn đề và từng bước phát triển sự nghiệp trong ngành công nghệ thông tin.</p>
+    </section>
+    <section id="skills">
+      <h2>💻 Kiến thức đang học</h2>
+      <div class="grid">
+        <div class="card"><h3>C / C++</h3><p>Luyện tư duy lập trình, biến, vòng lặp và hàm.</p></div>
+        <div class="card"><h3>HTML & CSS</h3><p>Xây dựng giao diện website đơn giản, thân thiện với điện thoại.</p></div>
+        <div class="card"><h3>Java & SQL</h3><p>Tiếp tục tìm hiểu lập trình ứng dụng và cơ sở dữ liệu.</p></div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>🚀 Dự án đầu tiên</h2>
+      <div class="project"><small>GitHub Pages • Website cá nhân</small><h3>Trang giới thiệu bản thân</h3><p>Website đầu tiên mình xây dựng bằng HTML và CSS, sau đó xuất bản miễn phí bằng GitHub Pages để mọi người có thể truy cập trực tuyến.</p></div>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year">2026</span> Hoàng Long · Được tạo bằng HTML, CSS và GitHub Pages.</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
